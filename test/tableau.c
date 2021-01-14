@@ -3,7 +3,7 @@
 #include <stdlib.h> /* malloc, free, rand */
 
 int Fsize = 50;    /*maximum formula length*/
-int inputs = 10;   /* number of formulas expected in input.txt*/
+int inputs = 5000;   /* number of formulas expected in input.txt*/
 int ThSize = 100;  /* maximum size of set of formulas, if needed*/
 int TabSize = 500; /*maximum length of tableau queue, if needed*/
 
@@ -527,7 +527,7 @@ int main()
     printf("Error opening file");
     exit(1);
   }
-  if ((fpout = fopen("output.txt", "w")) == NULL)
+  if ((fpout = fopen("output1.txt", "w")) == NULL)
   {
     printf("Error opening file");
     exit(1);
